@@ -1,0 +1,70 @@
+title: Florian Courgey
+email:
+description: >- # this means to ignore newlines until "baseurl:"
+  Professional solutions designer since 2014
+baseurl: "" # the subpath of your site, e.g. /blog
+url: https://floriancourgey.com
+permalink: /:year/:month/:title
+
+# custom manifest.json
+manifest:
+  name: "floriancourgey.com"
+  short_name: "fc.com"
+  theme_color: "#2196f3"
+  background_color: "#2196f3"
+  display: "browser"
+  scope: "/"
+  start_url: "/"
+
+
+disqus:
+  shortname: floriancourgey
+
+gtm: GTM-PZGWZJG
+
+# paginate plugin
+paginate: 10
+paginate_path: "/page-:num/"
+
+collections:
+  authors:
+    output: true
+
+# https://jekyllrb.com/docs/configuration/front-matter-defaults/
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Florian Courgey"
+  - scope:
+      path: ""
+      type: "drafts"
+    values:
+      layout: "post"
+      author: "Florian Courgey"
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

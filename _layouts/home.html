@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+  <link rel="stylesheet" href="{{ "/assets/index.css" | relative_url }}">
+
+  <body>
+    {%- include gtm-noscript.html -%}
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    {{ content }}
+
+    {%- include footer.html -%}
+
+    {%- include footer-javascript.html -%}
+  </body>
+
+</html>
