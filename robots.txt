@@ -1,0 +1,6 @@
+---
+---
+# www.robotstxt.org/
+User-agent: *
+Allow: /ads.txt
+Sitemap: {{ site.url }}/sitemap.xml
